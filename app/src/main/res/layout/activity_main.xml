@@ -1,53 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="@dimen/activity_vertical_margin"
-tools:context="com.example.mohamed.filemanager.MainActivity">
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Hello World!"
-    android:textColor="#21e510" />
-
-<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true">
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.mohamed.filemanager.MainActivity">
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_weight="1.4"
-        android:onClick="chmod"
-        android:text="Change Permission" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="#21e510" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginLeft="8dp"
-        android:layout_weight="1"
-        android:onClick="create"
-        android:text="Create" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_weight="1"
-        android:onClick="delete"
-        android:text="Delete" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1.4"
+            android:onClick="chmod"
+            android:text="Change Permission" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_weight="1"
-        android:onClick="link"
-        android:text="Link" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:onClick="create"
+            android:text="Create" />
 
-</LinearLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:onClick="delete"
+            android:text="Delete" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:onClick="link"
+            android:text="Link" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_margin="8dp"
+            android:spinnerMode="dropdown"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
