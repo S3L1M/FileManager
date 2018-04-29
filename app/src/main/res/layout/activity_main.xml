@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="@dimen/activity_vertical_margin"
+tools:context="com.example.mohamed.filemanager.MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello World!"
+    android:textColor="#21e510" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="1.4"
+        android:onClick="chmod"
+        android:text="Change Permission" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:onClick="create"
+        android:text="Create" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:onClick="delete"
+        android:text="Delete" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:onClick="link"
+        android:text="Link" />
+
+</LinearLayout>
+
+</RelativeLayout>
