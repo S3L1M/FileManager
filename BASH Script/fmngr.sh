@@ -19,7 +19,7 @@ elif [ "$switcher" == "--link" ]
 then
 	if [ -d "$var" ] || [ -f "$var" ]
 		then
-		ln -s $PWD/$var /sdcard/os/Home/
+		ln -s $PWD/$var $PWD/$var.lnk
 		ls -l -a
 	else
 #echo "[E] File/Folder doesn't exist!"
