@@ -22,7 +22,7 @@ then
 		ln -s $PWD/$var $PWD/$var.lnk
 		ls -l -a
 	else
-#echo "[E] File/Folder doesn't exist!"
+echo "[E] File/Folder doesn't exist!"
 fi
 
 elif [ "$switcher" == "--perms" ]
@@ -32,7 +32,7 @@ then
 		chmod $val $var
 		ls -l -a
 	else
-		#echo "[E] File/Folder doesn't exist!"
+		echo "[E] File/Folder doesn't exist!"
 	fi
 
 elif [[ "$switcher" == "--folder" ]]
@@ -42,12 +42,12 @@ then
 		rm -r $var
 		ls -l -a
 	else
-		#echo "Directory Doesn't Exist!"
+		echo "Directory Doesn't Exist!"
 		if [ -e "$var" ]
 			then
-			#echo "However, There seems to be a file with the same name ($var)"
+			echo "However, There seems to be a file with the same name ($var)"
 		else
-			#echo "Creating it!"
+			echo "Creating it!"
 			mkdir $var
 			ls -l -a
 		fi
